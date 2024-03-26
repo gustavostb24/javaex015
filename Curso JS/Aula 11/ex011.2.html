@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de paises</h1>
+    <input type="text" name="txtn1" id="txtn1">
+    <input type="button" value="Conferir" onclick="Conferir()">
+    <div id="msg"></div>
+    <div id="resultado"></div>
+    <script>
+        let n = prompt('Qual seu País?')
+    function conferir() {
+        let Brasil = "Brasil"
+        let txtbr = document.querySelector('input#txtn1')
+        let msg = document.querySelector('div#msg')
+        let país = (txtbr.value)
+        msg.innerHTML = `<p>Você é natural de <strong>${país}</strong><p>`
+    }
+    </script>
+    
+</body>
+</html>
