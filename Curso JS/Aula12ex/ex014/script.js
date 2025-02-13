@@ -7,12 +7,12 @@ function carregar() {
     msg.innerHTML = `Agora são ${hora} horas`;
 
     if (hora >= 0 && hora < 12){
-            img.src = 'fotomanha1.png.jpg'
+            img.src = 'imagens/fotomanha1.png.jpg'
 
     } else if (hora >= 12 && hora < 18) {
-             img.src = 'fototarde1.png.jpg'
+             img.src = 'imagens/fototarde1.png.jpg'
 
     } else {
-               img.src = 'fotonoite1.png.jpg'
+               img.src = 'imagens/fotonoite1.png.jpg'
     }
 }
